@@ -46,7 +46,7 @@
 ```
 * Выполните миграции
 ```bash
-    docker-compose exec backend python manage.py migrate --noinput
+    docker-compose exec web python manage.py migrate --noinput
 ```
 * Откройте страницу http://127.0.0.1:8000/ в браузере нажмите "Запустить". Начнется
 запустится автоматическое обновление записей из таблицы Google Heets в базу данных.
