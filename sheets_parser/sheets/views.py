@@ -76,7 +76,7 @@ def update_sheet():
 
 def get_sheet():
     """Получение таблицы из Google Sheets"""
-    gc = gspread.service_account(filename=settings.KEY_FILE)  # Данные для авторизации
+    gc = gspread.service_account(filename=settings.KEY_FILE)  # Файл с данными для авторизации
     sh = gc.open_by_key(os.getenv('KEY_TABLE'))  # Открываем таблицу
     worksheet = sh.sheet1  # Выбираем нужный лист
     return worksheet.get_all_values()  # Возвращает ввиде списка списков

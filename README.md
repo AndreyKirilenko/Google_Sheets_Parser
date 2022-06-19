@@ -21,6 +21,7 @@
 ```
 * создайте в ```/sheets_parser``` файл ```.env``` с переменными окружения
 ```python
+    DB_ENGINE=<django.db.backends.postgresql>
     DB_NAME=<db_name>  # имя базы данных
     POSTGRES_USER=<db_login>  # логин для подключения к базе данных
     POSTGRES_PASSWORD=<db_password>  # пароль для подключения к БД
