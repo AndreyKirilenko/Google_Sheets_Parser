@@ -145,4 +145,3 @@ es_formats.DATE_FORMAT = 'd-m-y'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 KEY_FILE = os.path.join(STATIC_ROOT, str(os.getenv('KEY_FILE')))
-# KEY_TABLE = os.getenv('KEY_TABLE')
