@@ -34,7 +34,7 @@
 ```
 * в директории sheets_parser создайте папку static и скопируйте в нее файл с приватными ключами, для сервисного аккаунта, полученный от Google.
 
-<img src="readme_assets/maxresd.png">
+<img src="readme_assets/maxres.png">
 
 * Перейдите в папку sheets_parser
 ```bash
