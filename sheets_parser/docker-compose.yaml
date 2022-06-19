@@ -1,0 +1,28 @@
+version: '3.8'
+
+services: # имена и описания контейнеров, которые должны быть развёрнуты
+  db: # описание контейнера db
+    image: postgres:13.0-alpine # образ, из которого должен быть запущен контейнер
+    volumes: # volume и связанная с ним директория в контейнере
+      - postgres_data:/var/lib/postgresql/data/
+    env_file: # переменные окружения для проброса внутрь контейнера.
+      - ./.env
+  web:
+    build: . # создать образ для контейнера из докерфайла, который лежит в директории 
+    restart: always # аналог системы запуска юнитов в systemd
+    command: gunicorn sheets_parser.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - static_value:/code/static/
+      - media_value:/code/media/
+    ports:
+     - "8000:8000" # проброс портов
+    
+    depends_on: # "зависит от", 
+      - db
+    env_file: # переменные окружения для проброса внутрь контейнера.
+      - ./.env
+  
+volumes:
+  postgres_data:
+  static_value:
+  media_value:

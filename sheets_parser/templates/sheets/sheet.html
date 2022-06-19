@@ -1,0 +1,42 @@
+{% extends "index.html" %}
+{% block title %}Просмотр поста{% endblock %}
+{% block header %}Просмотр поста{% endblock %}
+
+{% block content %}
+<table class="table table-sm">
+    <thead>
+      <tr>
+        <th scope="col", colspan="3">Таблица заказов</th>
+        {% if update %}
+            <th scope="col", colspan="2" style="color: green;">Обновление запущено  /<a class="nav-link" href="{% url "stop_update" %}" style="color: red; display: inline;">Остановить</a></th>
+        {% else %}
+            <th scope="col", colspan="2" style="color: red;">Обновление остановлено  /<a class="nav-link" href="{% url "start_update" %}" style="color: green; display: inline;">Запустить</a></th>
+        {% endif%}
+      </tr>  
+      <tr>
+        
+        <th scope="col">№</th>
+        <th scope="col">№ Заявки</th>
+        <th scope="col">Цена USD</th>
+        <th scope="col">Цена USD</th>
+        <th scope="col">Дата доставки</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for string in table %}
+        <tr>
+            <td scope="col">{{ string.num }}</td>
+            <td scope="col">{{ string.reservation }}</td>
+            <td scope="col">{{ string.price_usd }}</td>
+            <td scope="col">{{ string.price_rub|floatformat:2}}</td>
+            <td scope="col">{{ string.delivery_date}}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="9">Пока ничего нет</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

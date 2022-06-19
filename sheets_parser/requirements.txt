@@ -1,0 +1,11 @@
+# pgoogle-api-python-client
+# oauth2client
+Django==3.2.9
+gspread
+flake8
+isort
+ipdb
+psycopg2-binary==2.8.6
+python-dotenv
+gunicorn==20.0.4
+python-telegram-bot
