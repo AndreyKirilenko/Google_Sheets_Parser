@@ -61,10 +61,10 @@
 Python, Django, Docker, Docker-compose, Git
 
 Библиотеки:
-gspread - Библиотека для обмена данными с Google Sheets
-threading - Модуль создает высокоуровневые потоковые интерфейсы
-python-telegram-bot - Отправка сообщений в телеграм
-etree.ElementTree - Встроенная библиотека, через нее парсим XML файл с курсами валют
+- gspread - Библиотека для обмена данными с Google Sheets
+- threading - Модуль создает высокоуровневые потоковые интерфейсы
+- python-telegram-bot - Отправка сообщений в телеграм
+- etree.ElementTree - Встроенная библиотека, через нее парсим XML файл с курсами валют
 
 
 ## Автор
