@@ -13,7 +13,7 @@
 ```https://www.docker.com/get-started```
 * установите виртуальное окружение
 ```bash
-    py -m venv venv
+    python3 -m venv venv
 ```
 * Активируйте виртуальное окружение
 ```bash
