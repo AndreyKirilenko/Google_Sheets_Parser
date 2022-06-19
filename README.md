@@ -17,7 +17,7 @@
 ```
 * Активируйте виртуальное окружение
 ```bash
-    source venv/Scripts/activate
+    . venv/Scripts/activate
 ```
 * создайте в ```/sheets_parser``` файл ```.env``` с переменными окружения
 ```python
