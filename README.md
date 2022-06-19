@@ -29,7 +29,7 @@
     TELEGRAM_TOKEN=<token>  # Ваш чат телеграм токен
     TELEGRAM_CHAT_ID=<chat_id>  # Ваш чат ID
     KEY_TABLE=18oeulFN2llNidNMF2O-GBRRYK6EycS_IEP9OVyQTe_o  # Идентификатор таблицы Google Sheets (Можно скопировать из URL таблицы)
-    KEY_FILE=<KEY_FILE>  # Ваш json файл c с настройками авторизации (steady-computer-353313-ba0354c9ad72.json)
+    KEY_FILE=steady-computer-353313-ba0354c9ad72.json  # Ваш json файл c с настройками авторизации
 ```
 * Скопируйте файл с приватными ключами, для сервисного аккаунта, полученный от Google в папку static.
 <img src="readme_assets/maxresd.png">
